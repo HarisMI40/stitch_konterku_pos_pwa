@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;font-family:'Inter',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed-variant":"#0039b5","secondary":"#006c49","inverse-surface":"#213145","on-surface-variant":"#434655","on-tertiary-container":"#ffc8c3","on-primary":"#ffffff","tertiary-fixed-dim":"#ffb3ad","on-background":"#0b1c30","surface-variant":"#d3e4fe","on-primary-fixed":"#001551","primary":"#0037b0","on-tertiary":"#ffffff","surface":"#f8f9ff","on-secondary-container":"#00714d","error-container":"#ffdad6","surface-container":"#e5eeff","on-secondary-fixed":"#002113","surface-container-low":"#eff4ff","surface-container-high":"#dce9ff","inverse-primary":"#b7c4ff","tertiary-container":"#b61722","outline-variant":"#c4c5d7","primary-container":"#1d4ed8","secondary-fixed-dim":"#4edea3","surface-container-lowest":"#ffffff","tertiary-fixed":"#ffdad7","inverse-on-surface":"#eaf1ff","outline":"#747686","on-error-container":"#93000a","primary-fixed":"#dce1ff","secondary-fixed":"#6ffbbe","on-tertiary-fixed":"#410004","primary-fixed-dim":"#b7c4ff","surface-bright":"#f8f9ff","surface-container-highest":"#d3e4fe","on-secondary-fixed-variant":"#005236","on-surface":"#0b1c30","background":"#f8f9ff","tertiary":"#8f0012","surface-dim":"#cbdbf5","on-primary-container":"#cad3ff","on-error":"#ffffff","on-tertiary-fixed-variant":"#930013","error":"#ba1a1a","surface-tint":"#2151da","on-secondary":"#ffffff","secondary-container":"#6cf8bb"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1rem","space-xl":"2rem","space-sm":"0.5rem","margin-desktop":"2rem","gutter-desktop":"1.5rem","space-md":"1rem","margin":"1rem","space-lg":"1.5rem","space-xs":"0.25rem"},"fontFamily":{"label-md":["Inter"],"display-currency":["Inter"],"display-currency-mobile":["Inter"],"headline-sm":["Inter"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-lg":["Inter"],"body-md":["Inter"],"label-lg":["Inter"],"label-sm":["Inter"],"headline-md":["Inter"]},"fontSize":{"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"display-currency":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-currency-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}]}}}}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><div class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center flex-shrink-0 shadow-sm"><span class="material-symbols-outlined text-on-primary text-[20px]">point_of_sale</span></div><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-tight">KonterKu</span><button class="flex items-center gap-space-xs text-left max-w-full" type="button"><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Berkah Cell (Utama)</span><span class="material-symbols-outlined text-on-surface-variant text-[14px]">expand_more</span></button></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifikasi" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="sr-only">Laporan</div><div class="flex flex-col w-full pb-8">
+<!-- Sub-Header Status Bar -->
+<div class="px-gutter pt-2 pb-3 bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px]">event_available</span>
+<span class="font-label-md text-label-md text-on-surface">Shift Pagi • Rabu, 24 Mei 2024</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+        Siap Rekonsiliasi
+      </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">badge</span>
+        Kasir: <strong class="text-on-surface font-label-md">Agus Prastyo</strong>
+</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">store</span>
+        Berkah Cell (Utama)
+      </span>
+</div>
+</div>
+<div class="px-gutter flex flex-col gap-4 mt-3">
+<!-- Grid Ringkasan Kas -->
+<div class="grid grid-cols-2 gap-3">
+<!-- Modal Awal -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Modal Kas Pagi</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+</div>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block tracking-tight">Rp300.000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Uang awal di laci</span>
+</div>
+</div>
+<!-- Penjualan Tunai -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tunai Masuk</span>
+<div class="w-7 h-7 rounded-lg bg-secondary-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">arrow_downward_alt</span>
+</div>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-secondary block tracking-tight">+Rp1.100.000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">26 transaksi tunai</span>
+</div>
+</div>
+</div>
+<!-- Pengeluaran Kas Row Summary -->
+<div class="bg-surface-container-lowest px-4 py-3 rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-error-container flex items-center justify-center text-error flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">arrow_upward_alt</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block leading-tight">Pengeluaran Kas Laci</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">3 pengeluaran operasional</span>
+</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-error tracking-tight">-Rp120.000</span>
+</div>
+<!-- Large Highlight Hero Card: Sisa Laci Menurut Sistem -->
+<div class="relative overflow-hidden rounded-xl bg-primary text-on-primary p-4 shadow-md">
+<!-- Decorative Backdrop Graphic -->
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-white/10 pointer-events-none"></div>
+<div class="flex items-center justify-between relative z-10 mb-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-fixed text-[20px]">verified_user</span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-primary-fixed">Target Sistem Kasir</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-white/15 text-primary-fixed font-label-sm text-label-sm backdrop-blur-sm">
+          Auto Audit
+        </span>
+</div>
+<div class="relative z-10 my-1">
+<span class="font-body-sm text-body-sm text-primary-fixed-dim block">Sisa Laci Menurut Sistem:</span>
+<div class="font-display-currency-mobile text-display-currency-mobile font-bold tracking-tight text-white mt-0.5" id="systemCashAmount">
+          Rp 1.280.000
+        </div>
+</div>
+<div class="relative z-10 pt-2.5 mt-2.5 border-t border-white/15 flex items-center justify-between text-[11px] text-primary-fixed-dim font-body-sm">
+<span>Modal 300rb + Masuk 1.1jt - Keluar 120rb</span>
+<span class="flex items-center gap-0.5 text-white font-label-sm">
+<span class="material-symbols-outlined text-[14px]">calculate</span>
+          Otomatis
+        </span>
+</div>
+</div>
+<!-- Section Rekonsiliasi: Hitung Fisik -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex flex-col gap-3.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Penghitungan Uang Fisik</span>
+</div>
+<button class="text-primary font-label-sm text-label-sm hover:underline flex items-center gap-0.5" id="btnBukaHitungNominal" type="button">
+<span class="material-symbols-outlined text-[16px]">pin</span>
+          Rincian Lembar
+        </button>
+</div>
+<!-- Currency Input Field -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1" for="inputFisik">
+          Total Uang Tunai di Laci Saat Ini
+        </label>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 font-headline-sm text-headline-sm text-on-surface-variant font-bold">Rp</span>
+<input class="w-full h-12 pl-12 pr-10 rounded-xl bg-surface-container-low font-headline-md text-headline-md text-on-surface font-bold focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="inputFisik" inputmode="numeric" placeholder="0" type="text" value="1.280.000"/>
+<button class="absolute right-3 w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" id="btnClearInput" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+</div>
+<!-- Quick Preset Helper Chips -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 -mt-1 text-on-surface-variant">
+<span class="font-label-sm text-label-sm flex-shrink-0 text-on-surface-variant">Pintasan:</span>
+<button class="preset-chip px-2.5 py-1 rounded-full bg-surface-container-low hover:bg-surface-container font-label-sm text-label-sm text-on-surface flex-shrink-0" data-value="1280000" type="button">
+          Sesuai Sistem (Pas)
+        </button>
+<button class="preset-chip px-2.5 py-1 rounded-full bg-surface-container-low hover:bg-surface-container font-label-sm text-label-sm text-on-surface flex-shrink-0" data-value="1250000" type="button">
+          Rp 1.250.000
+        </button>
+<button class="preset-chip px-2.5 py-1 rounded-full bg-surface-container-low hover:bg-surface-container font-label-sm text-label-sm text-on-surface flex-shrink-0" data-value="1300000" type="button">
+          Rp 1.300.000
+        </button>
+</div>
+<!-- Status Rekonsiliasi (Dinamis: Match / Selisih) -->
+<div class="p-3.5 rounded-xl bg-secondary-container/40 flex items-start gap-3 transition-colors duration-200" id="statusSelisihCard">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-secondary flex items-center justify-center flex-shrink-0 shadow-sm mt-0.5" id="statusIconBox">
+<span class="material-symbols-outlined text-[20px]" id="statusIcon" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between mb-0.5">
+<span class="font-label-md text-label-md text-on-secondary-container" id="statusTitle">Selisih: Rp0 (Pas / Cocok ✓)</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-bold" id="statusBadge">100% Match</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-secondary-container/85 leading-snug" id="statusDesc">
+            Uang fisik di laci sesuai dengan pencatatan sistem kasir. Aman untuk tutup buku.
+          </p>
+</div>
+</div>
+<!-- Catatan Tutup Kas Kasir -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between" for="catatanKasir">
+<span>Catatan Serah Terima / Keterangan</span>
+<span class="text-[11px] font-normal">Opsional</span>
+</label>
+<textarea class="w-full p-2.5 rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="catatanKasir" placeholder="Tuliskan catatan serah terima fisik, nota bon manual, atau alasan bila ada selisih..." rows="2">Kas fisik pas, semua nota bon dan fisik kabel charger sudah dirapikan untuk shift sore.</textarea>
+</div>
+</div>
+<!-- Modal Rincian Pecahan Uang (Collapsed Helper Drawer preview) -->
+<div class="hidden bg-surface-container-low p-3.5 rounded-xl flex flex-col gap-2.5" id="panelPecahan">
+<div class="flex items-center justify-between pb-1 border-b border-surface-variant">
+<span class="font-label-md text-label-md text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">receipt</span>
+          Kalkulator Pecahan Uang Kertas &amp; Koin
+        </span>
+<button class="text-on-surface-variant text-[12px] font-label-sm" id="btnTutupPecahan" type="button">Tutup</button>
+</div>
+<div class="grid grid-cols-2 gap-2 text-body-sm">
+<div class="flex items-center justify-between bg-surface-container-lowest p-2 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface">Rp100.000 ×</span>
+<input class="denom-input w-12 text-center rounded bg-surface-container-low py-1 font-label-md" data-nominal="100000" type="number" value="10"/>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest p-2 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface">Rp50.000 ×</span>
+<input class="denom-input w-12 text-center rounded bg-surface-container-low py-1 font-label-md" data-nominal="50000" type="number" value="5"/>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest p-2 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface">Rp20.000 ×</span>
+<input class="denom-input w-12 text-center rounded bg-surface-container-low py-1 font-label-md" data-nominal="20000" type="number" value="1"/>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest p-2 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface">Rp10.000 ×</span>
+<input class="denom-input w-12 text-center rounded bg-surface-container-low py-1 font-label-md" data-nominal="10000" type="number" value="1"/>
+</div>
+</div>
+<button class="w-full py-2 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm shadow-sm" id="btnTerapkanPecahan" type="button">
+        Terapkan ke Kolom Uang Fisik
+      </button>
+</div>
+<!-- Section: Daftar Pengeluaran Hari Ini -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Pengeluaran Operasional</span>
+<span class="px-2 py-0.2 rounded-full bg-surface-container font-label-sm text-label-sm text-primary">3</span>
+</div>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container text-primary font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+          Tambah
+        </button>
+</div>
+<!-- Daftar List Pengeluaran -->
+<div class="flex flex-col gap-2.5">
+<!-- Item 1 -->
+<div class="flex items-center justify-between py-1.5 border-b border-surface-container-low">
+<div class="flex items-start gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block truncate">Token Listrik Konter</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] block">Operasional Toko • 09:15 WIB</span>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-error font-bold whitespace-nowrap">-Rp50.000</span>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center justify-between py-1.5 border-b border-surface-container-low">
+<div class="flex items-start gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">inventory</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block truncate">Beli Lakban &amp; Plastik Packing</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] block">Perlengkapan Toko • 11:30 WIB</span>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-error font-bold whitespace-nowrap">-Rp20.000</span>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center justify-between py-1.5">
+<div class="flex items-start gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">lunch_dining</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block truncate">Makan Siang &amp; Es Kasir</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] block">Konsumsi Kasir (Agus) • 13:00 WIB</span>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-error font-bold whitespace-nowrap">-Rp50.000</span>
+</div>
+</div>
+<!-- Subtotal Pengeluaran Footer -->
+<div class="bg-surface-container-low p-2.5 rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total Pengeluaran Kasir:</span>
+<span class="font-label-md text-label-md text-error">Rp120.000</span>
+</div>
+</div>
+<!-- Bukti / Foto Fisik Laci (Opsional Audit Delight) -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">photo_camera</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Foto Kondisi Laci</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Sebagai lampiran audit ke pemilik (opsional)</span>
+</div>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center text-primary hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">add_a_photo</span>
+</button>
+</div>
+<!-- Sticky Bottom Execution Container -->
+<div class="flex flex-col gap-2.5 pt-2">
+<!-- WhatsApp Sync Info Notice -->
+<div class="px-3.5 py-2.5 rounded-xl bg-primary-fixed/30 flex items-center gap-2.5 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0">send_and_archive</span>
+<span class="font-body-sm text-body-sm leading-snug">
+          Laporan rekap kas akan langsung <strong>dikunci</strong> dan dikirim via WhatsApp ke <strong>Owner Berkah Cell</strong>.
+        </span>
+</div>
+<!-- Action Button 1: Tutup Kas Button (Primary Lock) -->
+<button class="w-full h-14 rounded-xl bg-primary text-on-primary hover:bg-on-primary-fixed-variant transition-colors flex items-center justify-center gap-2 shadow-md active:scale-[0.99]" id="btnSubmitTutupKas" type="button">
+<span class="material-symbols-outlined text-[22px]">lock_clock</span>
+<span class="font-label-lg text-label-lg font-bold">Tutup Kas Shift Ini (Rp1.280.000)</span>
+</button>
+<!-- Auxiliary Row Actions (Thermal Print & Kick Drawer) -->
+<div class="grid grid-cols-2 gap-2">
+<button class="h-11 px-3 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm hover:bg-surface-container transition-colors" id="btnCetakStruk" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">print</span>
+          Cetak Struk Rekap
+        </button>
+<button class="h-11 px-3 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm hover:bg-surface-container transition-colors" id="btnBukaLaci" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">point_of_sale</span>
+          Buka Laci Tunai
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initTutupKas() {
+    const TARGET_SISTEM = 1280000;
+    const inputFisik = document.getElementById('inputFisik');
+    const btnClear = document.getElementById('btnClearInput');
+    const statusCard = document.getElementById('statusSelisihCard');
+    const statusTitle = document.getElementById('statusTitle');
+    const statusDesc = document.getElementById('statusDesc');
+    const statusBadge = document.getElementById('statusBadge');
+    const statusIconBox = document.getElementById('statusIconBox');
+    const statusIcon = document.getElementById('statusIcon');
+    const btnSubmit = document.getElementById('btnSubmitTutupKas');
+
+    // Pecahan Toggle
+    const btnBukaPecahan = document.getElementById('btnBukaHitungNominal');
+    const btnTutupPecahan = document.getElementById('btnTutupPecahan');
+    const panelPecahan = document.getElementById('panelPecahan');
+    const btnTerapkanPecahan = document.getElementById('btnTerapkanPecahan');
+    const denomInputs = document.querySelectorAll('.denom-input');
+
+    function parseRupiah(str) {
+      if (!str) return 0;
+      const clean = str.toString().replace(/[^0-9]/g, '');
+      return parseInt(clean, 10) || 0;
+    }
+
+    function formatRupiah(num) {
+      return new Intl.NumberFormat('id-ID').format(num);
+    }
+
+    function updateReconciliation(rawVal) {
+      const fisik = typeof rawVal === 'number' ? rawVal : parseRupiah(rawVal);
+      const selisih = fisik - TARGET_SISTEM;
+
+      // Update button text with current input
+      const submitLabel = btnSubmit.querySelector('.font-label-lg');
+      if (submitLabel) {
+        submitLabel.textContent = `Tutup Kas Shift Ini (Rp ${formatRupiah(fisik)})`;
+      }
+
+      if (selisih === 0) {
+        // MATCH (GREEN)
+        statusCard.className = 'p-3.5 rounded-xl bg-secondary-container/40 flex items-start gap-3 transition-colors duration-200';
+        statusIconBox.className = 'w-8 h-8 rounded-full bg-secondary-container text-secondary flex items-center justify-center flex-shrink-0 shadow-sm mt-0.5';
+        statusIcon.textContent = 'check_circle';
+        statusTitle.className = 'font-label-md text-label-md text-on-secondary-container';
+        statusTitle.textContent = 'Selisih: Rp0 (Pas / Cocok ✓)';
+        statusBadge.className = 'font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-bold';
+        statusBadge.textContent = '100% Match';
+        statusDesc.className = 'font-body-sm text-body-sm text-on-secondary-container/85 leading-snug';
+        statusDesc.textContent = 'Uang fisik di laci sesuai dengan pencatatan sistem kasir. Aman untuk tutup buku.';
+      } else if (selisih < 0) {
+        // DEFICIT / KURANG (RED)
+        const def = Math.abs(selisih);
+        statusCard.className = 'p-3.5 rounded-xl bg-error-container/40 flex items-start gap-3 transition-colors duration-200';
+        statusIconBox.className = 'w-8 h-8 rounded-full bg-error-container text-error flex items-center justify-center flex-shrink-0 shadow-sm mt-0.5';
+        statusIcon.textContent = 'warning';
+        statusTitle.className = 'font-label-md text-label-md text-error';
+        statusTitle.textContent = `Selisih: -Rp ${formatRupiah(def)} (Kurang Kas)`;
+        statusBadge.className = 'font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-error text-on-error font-bold';
+        statusBadge.textContent = 'Selisih Minus';
+        statusDesc.className = 'font-body-sm text-body-sm text-on-error-container leading-snug';
+        statusDesc.textContent = 'Fisik kas laci lebih sedikit dari hitungan sistem. Wajib berikan keterangan pada catatan serah terima di bawah.';
+      } else {
+        // SURPLUS / LEBIH (AMBER/BLUE)
+        statusCard.className = 'p-3.5 rounded-xl bg-surface-container flex items-start gap-3 transition-colors duration-200';
+        statusIconBox.className = 'w-8 h-8 rounded-full bg-primary-fixed text-primary flex items-center justify-center flex-shrink-0 shadow-sm mt-0.5';
+        statusIcon.textContent = 'info';
+        statusTitle.className = 'font-label-md text-label-md text-primary';
+        statusTitle.textContent = `Selisih: +Rp ${formatRupiah(selisih)} (Lebih Kas)`;
+        statusBadge.className = 'font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary text-on-primary font-bold';
+        statusBadge.textContent = 'Selisih Plus';
+        statusDesc.className = 'font-body-sm text-body-sm text-on-surface-variant leading-snug';
+        statusDesc.textContent = 'Uang fisik laci melebihi pencatatan sistem. Pastikan seluruh transaksi pulsa/top-up manual sudah diinput.';
+      }
+    }
+
+    // Input event
+    if (inputFisik) {
+      inputFisik.addEventListener('input', (e) => {
+        const num = parseRupiah(e.target.value);
+        e.target.value = num > 0 ? formatRupiah(num) : '';
+        updateReconciliation(num);
+      });
+    }
+
+    if (btnClear) {
+      btnClear.addEventListener('click', () => {
+        inputFisik.value = '';
+        inputFisik.focus();
+        updateReconciliation(0);
+      });
+    }
+
+    // Preset Helper Chips
+    document.querySelectorAll('.preset-chip').forEach((chip) => {
+      chip.addEventListener('click', () => {
+        const val = parseInt(chip.getAttribute('data-value'), 10);
+        inputFisik.value = formatRupiah(val);
+        updateReconciliation(val);
+      });
+    });
+
+    // Kalkulator Pecahan Modal Panel
+    if (btnBukaPecahan) {
+      btnBukaPecahan.addEventListener('click', () => {
+        panelPecahan.classList.toggle('hidden');
+      });
+    }
+
+    if (btnTutupPecahan) {
+      btnTutupPecahan.addEventListener('click', () => {
+        panelPecahan.classList.add('hidden');
+      });
+    }
+
+    if (btnTerapkanPecahan) {
+      btnTerapkanPecahan.addEventListener('click', () => {
+        let total = 0;
+        denomInputs.forEach((inp) => {
+          const nom = parseInt(inp.getAttribute('data-nominal'), 10) || 0;
+          const qty = parseInt(inp.value, 10) || 0;
+          total += nom * qty;
+        });
+        inputFisik.value = formatRupiah(total);
+        updateReconciliation(total);
+        panelPecahan.classList.add('hidden');
+      });
+    }
+
+    // Interactivity: Cetak Struk Rekap Notification
+    const btnCetak = document.getElementById('btnCetakStruk');
+    if (btnCetak) {
+      btnCetak.addEventListener('click', () => {
+        const originalText = btnCetak.innerHTML;
+        btnCetak.innerHTML = '<span class="material-symbols-outlined text-[18px] text-secondary animate-spin">refresh</span> Mencetak...';
+        setTimeout(() => {
+          btnCetak.innerHTML = '<span class="material-symbols-outlined text-[18px] text-secondary">check</span> Struk Tercetak';
+          setTimeout(() => {
+            btnCetak.innerHTML = originalText;
+          }, 2000);
+        }, 800);
+      });
+    }
+
+    // Interactivity: Buka Laci Cash Drawer
+    const btnLaci = document.getElementById('btnBukaLaci');
+    if (btnLaci) {
+      btnLaci.addEventListener('click', () => {
+        const originalText = btnLaci.innerHTML;
+        btnLaci.innerHTML = '<span class="material-symbols-outlined text-[18px] text-primary">lock_open</span> Laci Terbuka';
+        setTimeout(() => {
+          btnLaci.innerHTML = originalText;
+        }, 1500);
+      });
+    }
+
+    // Interactivity: Submit Tutup Kas
+    if (btnSubmit) {
+      btnSubmit.addEventListener('click', () => {
+        const currentVal = parseRupiah(inputFisik.value);
+        const selisih = currentVal - TARGET_SISTEM;
+        const confirmMsg = selisih === 0 
+          ? `Konfirmasi Tutup Kas?\nTotal Fisik: Rp ${formatRupiah(currentVal)} (Pas 100%)\nData shift akan dikunci.` 
+          : `Perhatian: Ada selisih sebesar Rp ${formatRupiah(Math.abs(selisih))}.\nTetap lanjutkan dan kirim laporan ke WhatsApp Pemilik?`;
+
+        if (confirm(confirmMsg)) {
+          btnSubmit.disabled = true;
+          btnSubmit.innerHTML = `
+            <span class="material-symbols-outlined text-[20px] animate-spin">sync</span>
+            <span class="font-label-lg text-label-lg">Menyimpan & Mengirim Rekap...</span>
+          `;
+          setTimeout(() => {
+            btnSubmit.className = 'w-full h-14 rounded-xl bg-secondary text-on-secondary flex items-center justify-center gap-2 shadow-md';
+            btnSubmit.innerHTML = `
+              <span class="material-symbols-outlined text-[22px]">check_circle</span>
+              <span class="font-label-lg text-label-lg font-bold">Shift Pagi Berhasil Ditutup ✓</span>
+            `;
+          }, 1200);
+        }
+      });
+    }
+
+    // Initial reconciliation render
+    updateReconciliation(TARGET_SISTEM);
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center flex-1 h-full text-on-surface-variant hover:text-primary transition-all" data-path="beranda" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-label-sm mt-0.5">Beranda</span></a><a class="flex flex-col items-center justify-center flex-1 h-full text-on-surface-variant hover:text-primary transition-all" data-path="kasir" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-sm text-label-sm mt-0.5">Kasir</span></a><a class="flex flex-col items-center justify-center flex-1 h-full text-on-surface-variant hover:text-primary transition-all" data-path="stok" href="#"><span class="material-symbols-outlined text-[22px]">inventory_2</span><span class="font-label-sm text-label-sm mt-0.5">Stok</span></a><a aria-current="page" class="flex flex-col items-center justify-center flex-1 h-full transition-all text-primary font-bold" data-path="laporan" href="#"><span class="material-symbols-outlined text-[22px]">monitoring</span><span class="font-label-sm text-label-sm mt-0.5">Laporan</span></a><a class="flex flex-col items-center justify-center flex-1 h-full text-on-surface-variant hover:text-primary transition-all" data-path="lainnya" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-sm text-label-sm mt-0.5">Lainnya</span></a></div></nav><script src="nav.js"></script></body></html>

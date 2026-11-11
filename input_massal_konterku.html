@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-container":"#1d4ed8","outline":"#747686","surface-container-low":"#eff4ff","on-secondary-fixed":"#002113","on-primary-fixed-variant":"#0039b5","primary-fixed":"#dce1ff","on-primary-container":"#cad3ff","surface-variant":"#d3e4fe","on-tertiary-fixed-variant":"#930013","error":"#ba1a1a","on-primary":"#ffffff","on-tertiary":"#ffffff","surface-tint":"#2151da","secondary-container":"#6cf8bb","tertiary-container":"#b61722","on-secondary-fixed-variant":"#005236","on-secondary":"#ffffff","surface-bright":"#f8f9ff","on-background":"#0b1c30","surface-container-high":"#dce9ff","surface-container":"#e5eeff","background":"#f8f9ff","surface":"#f8f9ff","surface-container-highest":"#d3e4fe","on-secondary-container":"#00714d","inverse-on-surface":"#eaf1ff","secondary-fixed-dim":"#4edea3","tertiary-fixed-dim":"#ffb3ad","inverse-surface":"#213145","on-tertiary-container":"#ffc8c3","secondary-fixed":"#6ffbbe","surface-dim":"#cbdbf5","on-error":"#ffffff","primary":"#0037b0","on-primary-fixed":"#001551","primary-fixed-dim":"#b7c4ff","outline-variant":"#c4c5d7","tertiary-fixed":"#ffdad7","on-error-container":"#93000a","inverse-primary":"#b7c4ff","secondary":"#006c49","on-surface-variant":"#434655","on-surface":"#0b1c30","error-container":"#ffdad6","tertiary":"#8f0012","surface-container-lowest":"#ffffff","on-tertiary-fixed":"#410004"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin":"1rem","space-lg":"1.5rem","space-xs":"0.25rem","gutter-desktop":"1.5rem","space-xl":"2rem","space-sm":"0.5rem","space-md":"1rem","margin-desktop":"2rem","gutter":"1rem"},fontFamily:{"label-lg":["Inter"],"label-md":["Inter"],"label-sm":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"headline-sm":["Inter"],"display-currency":["Inter"],"display-currency-mobile":["Inter"],"headline-lg":["Inter"],"headline-md":["Inter"]},fontSize:{"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-sm":["16px",{lineHeight:"24px",fontWeight:"600"}],"display-currency":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"display-currency-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-md":["20px",{lineHeight:"28px",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">point_of_sale</span></div><span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">KonterKu</span></div><div class="hidden xl:flex items-center gap-space-xs px-space-md py-1 bg-surface-container-low rounded-full"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-md text-label-md text-on-surface">Berkah Cell</span><span class="text-outline font-body-sm text-body-sm">•</span><span class="font-body-sm text-body-sm text-on-surface-variant">Shift Pagi</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg"><a class="font-label-lg text-label-lg px-space-md py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="beranda" href="#">Beranda</a><a class="font-label-lg text-label-lg px-space-md py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="kasir" href="#">Kasir</a><a aria-current="page" class="px-space-md py-2 transition-colors bg-primary-container text-on-primary font-label-lg rounded-lg" data-path="input-massal" href="#">Input Massal</a><a class="font-label-lg text-label-lg px-space-md py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="stok" href="#">Stok</a><a class="font-label-lg text-label-lg px-space-md py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="laporan" href="#">Laporan</a><a class="font-label-lg text-label-lg px-space-md py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="pembukuan-kas" href="#">Pembukuan Kas</a></nav><div class="flex items-center gap-space-md"><button aria-label="Notifikasi" class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-tertiary rounded-full"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="text-right hidden sm:block"><div class="font-label-md text-label-md text-on-surface">Agus</div><div class="font-body-sm text-body-sm text-on-surface-variant">Kasir Utama</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-background"><div class="max-w-7xl mx-auto px-margin-desktop py-space-xl"><div class="flex flex-col w-full pb-32">
+<!-- Top Breadcrumb & Page Info -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md mb-1">
+<span>Kasir</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Rekap Akhir Hari</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Input Massal</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Input Massal Penjualan (Rekap Tutup Toko)</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Catat transaksi tertunda atau rekap penjualan fisik/catatan kertas sebelum tutup kas hari ini.</p>
+</div>
+<!-- Quick Draft Save Indicator -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-2 rounded-full shadow-sm self-start md:self-auto">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></div>
+<span class="font-label-md text-label-md text-secondary">Draf tersimpan otomatis</span>
+<span class="text-outline-variant">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">12 detik lalu</span>
+</div>
+</div>
+<!-- Control & Filter Toolbar Row -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md mb-space-lg shadow-sm flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-md">
+<!-- Date Selector -->
+<div class="flex items-center gap-space-sm bg-surface-container px-space-md py-2.5 rounded-lg text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_today</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Tanggal Transaksi</span>
+<span class="font-label-md text-label-md font-semibold">Rabu, 24 Mei 2024</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] ml-2">expand_more</span>
+</div>
+<!-- Shift Badge -->
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-2.5 rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[20px]">schedule</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Shift / Petugas</span>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface">Shift Sore & Tutup</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Agus</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Utilities -->
+<div class="flex items-center gap-space-sm">
+<button class="h-11 px-space-md bg-surface-container-low hover:bg-surface-container text-primary rounded-lg font-label-md text-label-md flex items-center gap-space-xs transition-colors shadow-sm" onclick="document.getElementById('paste-helper-modal').classList.toggle('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">content_paste</span>
+<span>Tempel dari Teks / Excel</span>
+</button>
+<button class="h-11 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface rounded-lg font-label-md text-label-md flex items-center gap-space-xs transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Format CSV/Excel</span>
+</button>
+</div>
+</div>
+<!-- Spreadsheet Table Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col mb-space-lg">
+<!-- Sub-header Table Action Bar -->
+<div class="p-space-md bg-surface-container-low/60 flex flex-wrap items-center justify-between gap-space-md">
+<!-- Search & Filters -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative w-64">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full pl-9 pr-3 py-2 bg-surface-container-lowest text-on-surface rounded-lg font-body-sm text-body-sm outline-none placeholder:text-outline shadow-sm focus:ring-2 focus:ring-primary" placeholder="Cari nama produk, no. HP..." type="text"/>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">Semua (42)</button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-tertiary font-label-sm text-label-sm flex items-center gap-1 font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Peringatan (2)
+          </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Tunai (26)</button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">QRIS (10)</button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Bon / Hutang (6)</button>
+</div>
+</div>
+<!-- Quick Add & Keyboard Hotkey Guide -->
+<div class="flex items-center gap-space-md">
+<div class="hidden xl:flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">keyboard</span>
+<span>Tips: Tekan <span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-semibold text-[11px]">Tab</span> atau <span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-semibold text-[11px]">Enter</span> untuk lompat kolom</span>
+</div>
+<button class="h-10 px-space-md bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-md text-label-md flex items-center gap-1 shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Tambah Baris</span>
+</button>
+</div>
+</div>
+<!-- The Editable Grid Table -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-sm text-body-sm min-w-[1100px]">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-md text-label-md">
+<th class="py-3.5 px-4 w-12 text-center">#</th>
+<th class="py-3.5 px-3 w-24">Waktu</th>
+<th class="py-3.5 px-3 w-72">Produk / Layanan SKU</th>
+<th class="py-3.5 px-3 w-48">No. Tujuan / Ket.</th>
+<th class="py-3.5 px-3 w-20 text-center">Qty</th>
+<th class="py-3.5 px-3 w-32 text-right">Harga Jual</th>
+<th class="py-3.5 px-3 w-32 text-right">Subtotal</th>
+<th class="py-3.5 px-3 w-28">Metode</th>
+<th class="py-3.5 px-3 w-36">Kantong Alokasi</th>
+<th class="py-3.5 px-3 w-48">Status / Catatan</th>
+<th class="py-3.5 px-3 w-20 text-center">Aksi</th>
+</tr>
+</thead>
+<tbody class="text-on-surface">
+<!-- Row 1: Valid Telkomsel -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-3 px-4 text-center font-label-md text-on-surface-variant">1</td>
+<td class="py-3 px-3">
+<input class="w-16 px-2 py-1 bg-surface-container/40 rounded font-label-md text-on-surface outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" type="text" value="14:15"/>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-tertiary-container text-on-tertiary">TSEL</span>
+<span class="font-label-md text-label-md font-semibold truncate">Telkomsel Reguler 10.000</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<input class="w-full px-2 py-1 bg-transparent rounded font-mono text-[13px] outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" type="text" value="0812-8821-4921"/>
+</td>
+<td class="py-3 px-3 text-center">
+<input class="w-12 text-center py-1 bg-surface-container/30 rounded font-label-md text-on-surface outline-none focus:ring-1 focus:ring-primary" type="number" value="1"/>
+</td>
+<td class="py-3 px-3 text-right font-medium">Rp12.000</td>
+<td class="py-3 px-3 text-right font-label-lg text-label-lg font-bold text-on-surface">Rp12.000</td>
+<td class="py-3 px-3">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low text-primary font-bold">Tunai</span>
+</td>
+<td class="py-3 px-3">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[13px]">payments</span> Laci Kasir
+              </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1.5 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Valid</span>
+</div>
+</td>
+<td class="py-3 px-3 text-center">
+<div class="flex items-center justify-center gap-1 text-on-surface-variant">
+<button class="p-1 hover:text-primary rounded" title="Duplikasi Baris" type="button"><span class="material-symbols-outlined text-[18px]">content_copy</span></button>
+<button class="p-1 hover:text-tertiary rounded" title="Hapus" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Token PLN -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-3 px-4 text-center font-label-md text-on-surface-variant">2</td>
+<td class="py-3 px-3">
+<input class="w-16 px-2 py-1 bg-surface-container/40 rounded font-label-md text-on-surface outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" type="text" value="14:40"/>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-amber-500 text-white">PLN</span>
+<span class="font-label-md text-label-md font-semibold truncate">Token PLN Prepaid 50.000</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<input class="w-full px-2 py-1 bg-transparent rounded font-mono text-[13px] outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" type="text" value="1420-8912-7711"/>
+</td>
+<td class="py-3 px-3 text-center">
+<input class="w-12 text-center py-1 bg-surface-container/30 rounded font-label-md text-on-surface outline-none focus:ring-1 focus:ring-primary" type="number" value="1"/>
+</td>
+<td class="py-3 px-3 text-right font-medium">Rp52.500</td>
+<td class="py-3 px-3 text-right font-label-lg text-label-lg font-bold text-on-surface">Rp52.500</td>
+<td class="py-3 px-3">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-bold">QRIS</span>
+</td>
+<td class="py-3 px-3">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[13px]">qr_code_2</span> QRIS BCA
+              </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1.5 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Valid</span>
+</div>
+</td>
+<td class="py-3 px-3 text-center">
+<div class="flex items-center justify-center gap-1 text-on-surface-variant">
+<button class="p-1 hover:text-primary rounded" title="Duplikasi Baris" type="button"><span class="material-symbols-outlined text-[18px]">content_copy</span></button>
+<button class="p-1 hover:text-tertiary rounded" title="Hapus" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Physical Item (Robot Cable) -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-3 px-4 text-center font-label-md text-on-surface-variant">3</td>
+<td class="py-3 px-3">
+<input class="w-16 px-2 py-1 bg-surface-container/40 rounded font-label-md text-on-surface outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" type="text" value="15:02"/>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-surface-container-highest text-on-surface">AKSESORIS</span>
+<span class="font-label-md text-label-md font-semibold truncate">Kabel Data Robot Type-C 2.4A</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<input class="w-full px-2 py-1 bg-transparent rounded text-on-surface-variant text-[13px] outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" type="text" value="Warna Hitam (Pcs)"/>
+</td>
+<td class="py-3 px-3 text-center">
+<input class="w-12 text-center py-1 bg-surface-container/30 rounded font-label-md text-on-surface outline-none focus:ring-1 focus:ring-primary font-bold" type="number" value="2"/>
+</td>
+<td class="py-3 px-3 text-right font-medium">Rp25.000</td>
+<td class="py-3 px-3 text-right font-label-lg text-label-lg font-bold text-on-surface">Rp50.000</td>
+<td class="py-3 px-3">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low text-primary font-bold">Tunai</span>
+</td>
+<td class="py-3 px-3">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[13px]">payments</span> Laci Kasir
+              </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1.5 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Valid (Stok sisa 8)</span>
+</div>
+</td>
+<td class="py-3 px-3 text-center">
+<div class="flex items-center justify-center gap-1 text-on-surface-variant">
+<button class="p-1 hover:text-primary rounded" title="Duplikasi Baris" type="button"><span class="material-symbols-outlined text-[18px]">content_copy</span></button>
+<button class="p-1 hover:text-tertiary rounded" title="Hapus" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Indosat Debt / Bon -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-3 px-4 text-center font-label-md text-on-surface-variant">4</td>
+<td class="py-3 px-3">
+<input class="w-16 px-2 py-1 bg-surface-container/40 rounded font-label-md text-on-surface outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" type="text" value="15:20"/>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-amber-400 text-on-surface">ISAT</span>
+<span class="font-label-md text-label-md font-semibold truncate">Paket Data Freedom 14GB 30Hr</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<input class="w-full px-2 py-0.5 bg-transparent rounded font-mono text-[13px] outline-none" type="text" value="0857-4100-3329"/>
+<span class="font-label-sm text-label-sm text-tertiary font-bold px-2">a.n Pak Joko (Bengkel)</span>
+</div>
+</td>
+<td class="py-3 px-3 text-center">
+<input class="w-12 text-center py-1 bg-surface-container/30 rounded font-label-md text-on-surface outline-none focus:ring-1 focus:ring-primary" type="number" value="1"/>
+</td>
+<td class="py-3 px-3 text-right font-medium">Rp38.000</td>
+<td class="py-3 px-3 text-right font-label-lg text-label-lg font-bold text-tertiary">Rp38.000</td>
+<td class="py-3 px-3">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-error-container text-on-error-container font-bold">Bon/Hutang</span>
+</td>
+<td class="py-3 px-3">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed flex items-center gap-1 w-max font-bold">
+<span class="material-symbols-outlined text-[13px]">person_alert</span> Buku Kasbon
+              </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-tertiary">receipt_long</span>
+<span class="text-tertiary font-semibold">Catat Piutang</span>
+</div>
+</td>
+<td class="py-3 px-3 text-center">
+<div class="flex items-center justify-center gap-1 text-on-surface-variant">
+<button class="p-1 hover:text-primary rounded" title="Duplikasi Baris" type="button"><span class="material-symbols-outlined text-[18px]">content_copy</span></button>
+<button class="p-1 hover:text-tertiary rounded" title="Hapus" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 5: WARNING ROW (Stok Insufficient) -->
+<tr class="bg-amber-50 hover:bg-amber-100/70 transition-colors">
+<td class="py-3 px-4 text-center font-label-md text-amber-900 font-bold">5</td>
+<td class="py-3 px-3">
+<input class="w-16 px-2 py-1 bg-white/70 rounded font-label-md text-on-surface outline-none focus:ring-1 focus:ring-amber-500" type="text" value="16:05"/>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-amber-600 text-white">AKSESORIS</span>
+<span class="font-label-md text-label-md font-semibold text-amber-950 truncate">Tempered Glass King Kong 11D</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<input class="w-full px-2 py-1 bg-white/70 rounded text-[13px] outline-none" type="text" value="Seri Reno 8 & A57"/>
+</td>
+<td class="py-3 px-3 text-center">
+<input class="w-12 text-center py-1 bg-white rounded font-label-md text-tertiary outline-none font-bold ring-2 ring-amber-400" type="number" value="3"/>
+</td>
+<td class="py-3 px-3 text-right font-medium">Rp20.000</td>
+<td class="py-3 px-3 text-right font-label-lg text-label-lg font-bold text-amber-950">Rp60.000</td>
+<td class="py-3 px-3">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low text-primary font-bold">Tunai</span>
+</td>
+<td class="py-3 px-3">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[13px]">payments</span> Laci Kasir
+              </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1.5 px-2 py-1 rounded bg-amber-200/80 text-amber-900 font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px] text-amber-700">warning</span>
+<span>Stok minus! (Sisa: 1, Dientri: 3)</span>
+</div>
+</td>
+<td class="py-3 px-3 text-center">
+<div class="flex items-center justify-center gap-1 text-on-surface-variant">
+<button class="p-1 hover:text-primary rounded" title="Duplikasi Baris" type="button"><span class="material-symbols-outlined text-[18px]">content_copy</span></button>
+<button class="p-1 hover:text-tertiary rounded" title="Hapus" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 6: DUPLICATE ROW (Telkomsel Duplicate Alert) -->
+<tr class="bg-orange-50 hover:bg-orange-100/70 transition-colors">
+<td class="py-3 px-4 text-center font-label-md text-orange-900 font-bold">6</td>
+<td class="py-3 px-3">
+<input class="w-16 px-2 py-1 bg-white/70 rounded font-label-md text-on-surface outline-none focus:ring-1 focus:ring-orange-500" type="text" value="14:18"/>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-tertiary-container text-on-tertiary">TSEL</span>
+<span class="font-label-md text-label-md font-semibold text-orange-950 truncate">Telkomsel Reguler 10.000</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<input class="w-full px-2 py-1 bg-white/70 rounded font-mono text-[13px] outline-none text-orange-950 font-bold" type="text" value="0812-8821-4921"/>
+</td>
+<td class="py-3 px-3 text-center">
+<input class="w-12 text-center py-1 bg-white/70 rounded font-label-md text-on-surface outline-none" type="number" value="1"/>
+</td>
+<td class="py-3 px-3 text-right font-medium">Rp12.000</td>
+<td class="py-3 px-3 text-right font-label-lg text-label-lg font-bold text-orange-950">Rp12.000</td>
+<td class="py-3 px-3">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low text-primary font-bold">Tunai</span>
+</td>
+<td class="py-3 px-3">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[13px]">payments</span> Laci Kasir
+              </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1.5 px-2 py-1 rounded bg-orange-200/80 text-orange-900 font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px] text-orange-700">content_copy</span>
+<span>Duplikat Baris #1 (dlm 3 mnt)</span>
+</div>
+</td>
+<td class="py-3 px-3 text-center">
+<div class="flex items-center justify-center gap-1 text-on-surface-variant">
+<button class="p-1 hover:text-primary rounded" title="Duplikasi Baris" type="button"><span class="material-symbols-outlined text-[18px]">content_copy</span></button>
+<button class="p-1 hover:text-tertiary rounded text-tertiary" title="Hapus" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 7: XL Data Package -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-3 px-4 text-center font-label-md text-on-surface-variant">7</td>
+<td class="py-3 px-3">
+<input class="w-16 px-2 py-1 bg-surface-container/40 rounded font-label-md text-on-surface outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" type="text" value="16:45"/>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-blue-600 text-white">XL</span>
+<span class="font-label-md text-label-md font-semibold truncate">XL Xtra Combo Flex M (15GB)</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<input class="w-full px-2 py-1 bg-transparent rounded font-mono text-[13px] outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" type="text" value="0878-1922-8319"/>
+</td>
+<td class="py-3 px-3 text-center">
+<input class="w-12 text-center py-1 bg-surface-container/30 rounded font-label-md text-on-surface outline-none focus:ring-1 focus:ring-primary" type="number" value="1"/>
+</td>
+<td class="py-3 px-3 text-right font-medium">Rp45.000</td>
+<td class="py-3 px-3 text-right font-label-lg text-label-lg font-bold text-on-surface">Rp45.000</td>
+<td class="py-3 px-3">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-bold">QRIS</span>
+</td>
+<td class="py-3 px-3">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[13px]">account_balance_wallet</span> DANA Bisnis
+              </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1.5 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Valid</span>
+</div>
+</td>
+<td class="py-3 px-3 text-center">
+<div class="flex items-center justify-center gap-1 text-on-surface-variant">
+<button class="p-1 hover:text-primary rounded" title="Duplikasi Baris" type="button"><span class="material-symbols-outlined text-[18px]">content_copy</span></button>
+<button class="p-1 hover:text-tertiary rounded" title="Hapus" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 8: Charger Accessory -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-3 px-4 text-center font-label-md text-on-surface-variant">8</td>
+<td class="py-3 px-3">
+<input class="w-16 px-2 py-1 bg-surface-container/40 rounded font-label-md text-on-surface outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" type="text" value="17:10"/>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-surface-container-highest text-on-surface">AKSESORIS</span>
+<span class="font-label-md text-label-md font-semibold truncate">Batok Charger Robot RT-K6 Quick</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<input class="w-full px-2 py-1 bg-transparent rounded text-on-surface-variant text-[13px] outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" type="text" value="Garansi 1 Thn"/>
+</td>
+<td class="py-3 px-3 text-center">
+<input class="w-12 text-center py-1 bg-surface-container/30 rounded font-label-md text-on-surface outline-none focus:ring-1 focus:ring-primary" type="number" value="1"/>
+</td>
+<td class="py-3 px-3 text-right font-medium">Rp35.000</td>
+<td class="py-3 px-3 text-right font-label-lg text-label-lg font-bold text-on-surface">Rp35.000</td>
+<td class="py-3 px-3">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low text-primary font-bold">Tunai</span>
+</td>
+<td class="py-3 px-3">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[13px]">payments</span> Laci Kasir
+              </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1.5 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Valid (Stok sisa 4)</span>
+</div>
+</td>
+<td class="py-3 px-3 text-center">
+<div class="flex items-center justify-center gap-1 text-on-surface-variant">
+<button class="p-1 hover:text-primary rounded" title="Duplikasi Baris" type="button"><span class="material-symbols-outlined text-[18px]">content_copy</span></button>
+<button class="p-1 hover:text-tertiary rounded" title="Hapus" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 9: ACTIVE INPUT PROMPT ROW (Ready to type) -->
+<tr class="bg-surface-container-low/70">
+<td class="py-3 px-4 text-center font-label-md text-primary font-bold">9</td>
+<td class="py-3 px-3">
+<input class="w-16 px-2 py-1 bg-surface-container-lowest rounded font-label-md text-on-surface outline-none ring-2 ring-primary" type="text" value="17:25"/>
+</td>
+<td class="py-3 px-3 relative">
+<div class="relative">
+<input autofocus="" class="w-full px-3 py-1.5 bg-surface-container-lowest rounded-md font-body-sm text-body-sm text-on-surface outline-none ring-2 ring-primary placeholder:text-outline shadow-sm" placeholder="Ketik SKU / nama produk (misal: tsel10)..." type="text"/>
+<!-- Autocomplete Dropdown Preview Mockup -->
+<div class="absolute left-0 top-10 w-72 bg-surface-container-lowest rounded-xl shadow-xl z-20 p-2 hidden">
+<div class="px-3 py-1 text-[11px] font-bold text-outline uppercase tracking-wider">Paling Sering Digunakan</div>
+<div class="px-3 py-2 rounded-lg hover:bg-surface-container-low cursor-pointer flex justify-between items-center">
+<span class="font-label-md text-label-md">Telkomsel 5.000 (tsel5)</span>
+<span class="font-body-sm text-body-sm text-secondary font-bold">Rp7.000</span>
+</div>
+<div class="px-3 py-2 rounded-lg hover:bg-surface-container-low cursor-pointer flex justify-between items-center">
+<span class="font-label-md text-label-md">Telkomsel 10.000 (tsel10)</span>
+<span class="font-body-sm text-body-sm text-secondary font-bold">Rp12.000</span>
+</div>
+<div class="px-3 py-2 rounded-lg hover:bg-surface-container-low cursor-pointer flex justify-between items-center">
+<span class="font-label-md text-label-md">Token PLN 20.000 (pln20)</span>
+<span class="font-body-sm text-body-sm text-secondary font-bold">Rp22.500</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<input class="w-full px-2 py-1 bg-surface-container-lowest rounded text-[13px] outline-none placeholder:text-outline" placeholder="08xx / ID Pelanggan" type="text"/>
+</td>
+<td class="py-3 px-3 text-center">
+<input class="w-12 text-center py-1 bg-surface-container-lowest rounded font-label-md text-on-surface outline-none" type="number" value="1"/>
+</td>
+<td class="py-3 px-3 text-right text-outline">Rp0</td>
+<td class="py-3 px-3 text-right text-outline font-bold">Rp0</td>
+<td class="py-3 px-3">
+<select class="px-2 py-1 bg-surface-container-lowest rounded font-label-sm text-label-sm text-on-surface outline-none">
+<option selected="">Tunai</option>
+<option>QRIS</option>
+<option>Bon/Hutang</option>
+</select>
+</td>
+<td class="py-3 px-3">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant">Otomatis</span>
+</td>
+<td class="py-3 px-3">
+<span class="text-outline font-body-sm text-body-sm italic">Menunggu input...</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="material-symbols-outlined text-[18px] text-outline">add_circle</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Quick Excel-like Pagination & Row Stat -->
+<div class="p-space-md bg-surface-container-low/40 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm">
+<span>Menampilkan <strong>8 dari 42</strong> baris draf rekap</span>
+<span class="text-outline-variant">•</span>
+<button class="text-primary hover:underline font-label-md text-label-md">+ Tampilkan 34 Baris Lainnya</button>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 rounded bg-surface-container hover:bg-surface-container-high font-label-sm text-label-sm text-on-surface">Urutkan Jam (Asc)</button>
+<button class="px-3 py-1 rounded bg-surface-container hover:bg-surface-container-high font-label-sm text-label-sm text-on-surface">Bersihkan Baris Kosong</button>
+</div>
+</div>
+</div>
+<!-- STICKY BOTTOM SUMMARY & ACTION BAR -->
+<div class="fixed bottom-0 left-0 w-full z-40 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_-4px_24px_rgba(0,0,0,0.08)] py-space-md px-margin-desktop">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<!-- Left: Aggregated Metrics -->
+<div class="flex flex-wrap items-center gap-space-lg w-full lg:w-auto justify-between lg:justify-start">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>42 TRANSAKSI REKAP</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">Total Omzet:</span>
+<span class="font-display-currency text-display-currency text-primary tracking-tight">Rp1.850.000</span>
+</div>
+</div>
+<div class="hidden sm:flex items-center gap-space-md pl-space-md bg-surface-container-low px-space-md py-2 rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">💵 Tunai (Laci)</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Rp1.100.000</span>
+</div>
+<div class="w-px h-8 bg-outline-variant/40"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">📱 QRIS / E-Wallet</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Rp500.000</span>
+</div>
+<div class="w-px h-8 bg-outline-variant/40"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">📋 Kasbon / Piutang</span>
+<span class="font-label-lg text-label-lg font-bold text-tertiary">Rp250.000</span>
+</div>
+<div class="w-px h-8 bg-outline-variant/40"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">📈 Est. Laba Bersih</span>
+<span class="font-label-lg text-label-lg font-bold text-secondary">+Rp245.000</span>
+</div>
+</div>
+</div>
+<!-- Right: Main Call to Actions -->
+<div class="flex items-center gap-space-md w-full lg:w-auto justify-end">
+<button class="h-12 px-space-md text-tertiary hover:bg-error-container hover:text-on-error-container rounded-lg font-label-lg text-label-lg transition-colors" type="button">
+          Reset Draf
+        </button>
+<button class="h-12 px-space-lg bg-secondary hover:bg-secondary/90 text-on-secondary rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-space-sm shadow-md transition-all active:scale-[0.98]" onclick="document.getElementById('impact-review-dialog').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[20px]">fact_check</span>
+<span>Tinjau & Simpan Semua (42)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- MODAL / DIALOG: REVIEW STEP & KANTONG MUTASI IMPACT -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-on-background/40 backdrop-blur-sm" id="impact-review-dialog">
+<div class="bg-surface-container-lowest rounded-xl max-w-3xl w-full max-h-[942px] overflow-y-auto shadow-2xl p-space-xl flex flex-col gap-space-lg">
+<!-- Modal Header -->
+<div class="flex items-start justify-between">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-primary font-label-sm text-label-sm font-semibold mb-2">
+<span class="material-symbols-outlined text-[14px]">account_balance</span>
+<span>Verifikasi Alokasi Pembukuan</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Konfirmasi & Tinjau Dampak Kantong Kas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Verifikasi pergerakan saldo kas dan stok sebelum 42 transaksi dicatat permanen.</p>
+</div>
+<button class="p-2 text-on-surface-variant hover:bg-surface-container rounded-lg" onclick="document.getElementById('impact-review-dialog').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- 4 POCKET IMPACT SUMMARY CARDS -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- 1. Laci Kasir -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">Laci Tunai Kasir</span>
+</div>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-secondary-container text-on-secondary-container">Kas Masuk</span>
+</div>
+<div class="font-display-currency text-display-currency text-secondary my-1">+Rp1.100.000</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dari 26 transaksi uang fisik. Uang riil di cash drawer wajib bertambah sesuai nominal ini.</p>
+</div>
+<!-- 2. Server Pulsa Digipos/Mitra -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center text-amber-800">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">Saldo Server Pulsa & PPOB</span>
+</div>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-amber-200 text-amber-900">Modal Keluar</span>
+</div>
+<div class="font-display-currency text-display-currency text-on-surface-variant my-1">-Rp1.600.000</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Estimasi modal pulsa terpotong di Digipos, SiDompul, dan PLN Token dari 38 transaksi digital.</p>
+</div>
+<!-- 3. Rekening QRIS BCA -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">Rekening & QRIS Settlement</span>
+</div>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-secondary-container text-on-secondary-container">Kas Masuk</span>
+</div>
+<div class="font-display-currency text-display-currency text-secondary my-1">+Rp500.000</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tercatat masuk ke QRIS Statis BCA & e-wallet DANA Kasir (10 transaksi non-tunai).</p>
+</div>
+<!-- 4. Kasbon / Piutang -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">Buku Piutang / Kasbon</span>
+</div>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-tertiary-container text-on-tertiary">Piutang Baru</span>
+</div>
+<div class="font-display-currency text-display-currency text-tertiary my-1">+Rp250.000</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ditambahkan ke rekap saldo hutang 3 pelanggan (Pak Joko, Mas Danang, Bu Rini).</p>
+</div>
+</div>
+<!-- RESOLUTION SECTION: 2 ALERTS -->
+<div class="p-space-md rounded-xl bg-amber-50 flex flex-col gap-space-sm">
+<div class="flex items-center gap-2 text-amber-900 font-label-lg text-label-lg font-bold">
+<span class="material-symbols-outlined text-amber-700">notification_important</span>
+<span>Perlu Perhatian Sebelum Simpan (2 Catatan)</span>
+</div>
+<!-- Alert 1 -->
+<div class="flex items-start gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-amber-600 text-[20px] mt-0.5">inventory_2</span>
+<div class="flex-1">
+<span class="font-label-md text-label-md text-on-surface">Stok Tempered Glass King Kong Kurang 2 pcs</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sistem mencatat stok tersisa hanya 1 pcs, namun dientri terjual 3 pcs. Sistem akan otomatis mencatat status minus (-2 pcs) untuk penyesuaian stok opname.</p>
+</div>
+<label class="flex items-center gap-1.5 cursor-pointer ml-2">
+<input checked="" class="w-4 h-4 accent-primary rounded" type="checkbox"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Setujui</span>
+</label>
+</div>
+<!-- Alert 2 -->
+<div class="flex items-start gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-orange-600 text-[20px] mt-0.5">content_copy</span>
+<div class="flex-1">
+<span class="font-label-md text-label-md text-on-surface">1 Transaksi Telkomsel 10k Terdeteksi Identik</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Baris #6 sama dengan #1 pada nomor 0812-8821-4921 dalam rentang 3 menit.</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 bg-surface-container hover:bg-surface-container-high rounded text-on-surface font-label-sm text-label-sm">Abaikan Duplikat</button>
+<button class="px-2.5 py-1 bg-primary text-on-primary rounded font-label-sm text-label-sm">Tetap Simpan (2x Topup)</button>
+</div>
+</div>
+</div>
+<!-- Hint to Closing Register -->
+<div class="flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-surface-container-low text-primary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+<span>Setelah tersimpan, data ini langsung masuk ke Rekap Tutup Kas harian untuk penyerahan shift kasir.</span>
+</div>
+<!-- Action Buttons in Dialog -->
+<div class="flex items-center justify-end gap-space-md pt-space-xs">
+<button class="h-12 px-space-lg text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg" onclick="document.getElementById('impact-review-dialog').classList.add('hidden')" type="button">
+          Kembali ke Tabel
+        </button>
+<button class="h-12 px-space-xl bg-secondary hover:bg-secondary/90 text-on-secondary rounded-lg font-label-lg text-label-lg flex items-center gap-2 shadow-md" onclick="alert('Berhasil! 42 Transaksi telah dicatat ke pembukuan.'); document.getElementById('impact-review-dialog').classList.add('hidden');" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Simpan Permanen & Masuk Buku Kas</span>
+</button>
+</div>
+</div>
+</div>
+<!-- TEXT/EXCEL QUICK PASTE MODAL -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-on-background/40 backdrop-blur-sm hidden" id="paste-helper-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-xl w-full shadow-2xl p-space-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">content_paste</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Tempel Data Penjualan Cepat</h3>
+</div>
+<button class="p-1 text-on-surface-variant hover:bg-surface-container rounded-lg" onclick="document.getElementById('paste-helper-modal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Salin baris dari Excel / Google Sheets atau teks WA catatan penjualan. Sistem akan mengenali SKU, nomor telepon, dan nominal secara cerdas.</p>
+<textarea class="w-full p-space-md bg-surface-container-low text-on-surface font-mono text-[13px] rounded-lg outline-none focus:ring-2 focus:ring-primary" placeholder="Contoh format:
+14:15  tsel10  081288214921  12000  tunai
+14:40  pln50   142089127711  52500  qris" rows="6"></textarea>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Format kolom: Waktu | SKU | No. HP | Harga | Metode</span>
+<button class="text-primary font-semibold hover:underline" type="button">Lihat Panduan Teks</button>
+</div>
+<div class="flex items-center justify-end gap-space-md mt-2">
+<button class="h-10 px-space-md font-label-md text-label-md text-on-surface-variant" onclick="document.getElementById('paste-helper-modal').classList.add('hidden')" type="button">Batal</button>
+<button class="h-10 px-space-lg bg-primary text-on-primary rounded-lg font-label-md text-label-md" onclick="document.getElementById('paste-helper-modal').classList.add('hidden')" type="button">Proses & Masukkan Tabel</button>
+</div>
+</div>
+</div>
+</div></div></main><footer class="w-full bg-surface-container-lowest mt-space-xl"><div class="max-w-7xl mx-auto px-margin-desktop py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[16px] text-secondary">sync_alt</span><span>Status Server Pulsa & PPOB: Normal</span></div><div class="font-body-sm text-body-sm text-on-surface-variant">© 2025 KonterKu. Solusi Pembukuan & Kasir Retail Pulsa.</div></div></footer><script src="nav.js"></script></body></html>
