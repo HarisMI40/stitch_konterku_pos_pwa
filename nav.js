@@ -1,7 +1,7 @@
 /* KonterKu - navigasi bersama antar halaman */
 (function () {
   var PAGES = {
-    beranda: 'beranda_konterku.html',
+    beranda: 'index.html',
     kasir: 'kasir_konterku.html',
     stok: 'stok_inventaris_konterku.html',
     laporan: 'laporan_keuangan_konterku.html',
